@@ -1,0 +1,1121 @@
+2018-08-22 09:11:14,911 - log/train.log - INFO - num_chars      :	4412
+2018-08-22 09:11:14,911 - log/train.log - INFO - char_dim       :	100
+2018-08-22 09:11:14,911 - log/train.log - INFO - num_tags       :	13
+2018-08-22 09:11:14,911 - log/train.log - INFO - seg_dim        :	20
+2018-08-22 09:11:14,911 - log/train.log - INFO - lstm_dim       :	100
+2018-08-22 09:11:14,911 - log/train.log - INFO - batch_size     :	20.0
+2018-08-22 09:11:14,911 - log/train.log - INFO - emb_file       :	wiki_100.utf8
+2018-08-22 09:11:14,911 - log/train.log - INFO - clip           :	5.0
+2018-08-22 09:11:14,911 - log/train.log - INFO - dropout_keep   :	0.5
+2018-08-22 09:11:14,911 - log/train.log - INFO - optimizer      :	adam
+2018-08-22 09:11:14,911 - log/train.log - INFO - lr             :	0.001
+2018-08-22 09:11:14,911 - log/train.log - INFO - tag_schema     :	iobes
+2018-08-22 09:11:14,911 - log/train.log - INFO - pre_emb        :	True
+2018-08-22 09:11:14,911 - log/train.log - INFO - zeros          :	False
+2018-08-22 09:11:14,911 - log/train.log - INFO - lower          :	True
+2018-08-22 09:11:17,278 - log/train.log - INFO - Created model with fresh parameters.
+2018-08-22 09:11:18,137 - log/train.log - INFO - Load pre-trained embedding.
+2018-08-22 09:11:18,137 - log/train.log - INFO - start training
+2018-08-22 09:11:27,587 - log/train.log - INFO - iteration:1 step:100/1044, NER loss:38.196701
+2018-08-22 09:11:35,614 - log/train.log - INFO - iteration:1 step:200/1044, NER loss:16.533190
+2018-08-22 09:11:42,998 - log/train.log - INFO - iteration:1 step:300/1044, NER loss:11.311110
+2018-08-22 09:11:51,056 - log/train.log - INFO - iteration:1 step:400/1044, NER loss:10.074398
+2018-08-22 09:11:58,261 - log/train.log - INFO - iteration:1 step:500/1044, NER loss: 7.731783
+2018-08-22 09:12:06,288 - log/train.log - INFO - iteration:1 step:600/1044, NER loss: 7.050755
+2018-08-22 09:12:14,533 - log/train.log - INFO - iteration:1 step:700/1044, NER loss: 6.688016
+2018-08-22 09:12:23,422 - log/train.log - INFO - iteration:1 step:800/1044, NER loss: 9.140756
+2018-08-22 09:12:31,694 - log/train.log - INFO - iteration:1 step:900/1044, NER loss: 6.859235
+2018-08-22 09:12:39,759 - log/train.log - INFO - iteration:1 step:1000/1044, NER loss: 5.869474
+2018-08-22 09:12:43,116 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:12:46,116 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3588 phrases; correct: 2734.
+
+2018-08-22 09:12:46,116 - log/train.log - INFO - accuracy:  96.79%; precision:  76.20%; recall:  71.59%; FB1:  73.82
+
+2018-08-22 09:12:46,116 - log/train.log - INFO -               LOC: precision:  75.85%; recall:  77.45%; FB1:  76.64  1992
+
+2018-08-22 09:12:46,116 - log/train.log - INFO -               ORG: precision:  71.64%; recall:  59.04%; FB1:  64.74  811
+
+2018-08-22 09:12:46,116 - log/train.log - INFO -               PER: precision:  81.78%; recall:  72.62%; FB1:  76.93  785
+
+2018-08-22 09:12:46,191 - log/train.log - INFO - new best dev f1 score:73.820
+2018-08-22 09:12:46,423 - log/train.log - INFO - model saved
+2018-08-22 09:12:46,423 - log/train.log - INFO - evaluate:test
+2018-08-22 09:12:51,860 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7345 phrases; correct: 5522.
+
+2018-08-22 09:12:51,861 - log/train.log - INFO - accuracy:  96.74%; precision:  75.18%; recall:  71.65%; FB1:  73.37
+
+2018-08-22 09:12:51,861 - log/train.log - INFO -               LOC: precision:  74.15%; recall:  76.13%; FB1:  75.13  3756
+
+2018-08-22 09:12:51,861 - log/train.log - INFO -               ORG: precision:  70.22%; recall:  59.13%; FB1:  64.20  1840
+
+2018-08-22 09:12:51,861 - log/train.log - INFO -               PER: precision:  82.62%; recall:  77.52%; FB1:  79.99  1749
+
+2018-08-22 09:12:51,937 - log/train.log - INFO - new best test f1 score:73.370
+2018-08-22 09:12:56,686 - log/train.log - INFO - iteration:2 step:56/1044, NER loss: 5.215852
+2018-08-22 09:13:04,362 - log/train.log - INFO - iteration:2 step:156/1044, NER loss: 4.630538
+2018-08-22 09:13:12,985 - log/train.log - INFO - iteration:2 step:256/1044, NER loss: 5.118123
+2018-08-22 09:13:21,249 - log/train.log - INFO - iteration:2 step:356/1044, NER loss: 4.221404
+2018-08-22 09:13:28,663 - log/train.log - INFO - iteration:2 step:456/1044, NER loss: 3.802354
+2018-08-22 09:13:36,140 - log/train.log - INFO - iteration:2 step:556/1044, NER loss: 3.598668
+2018-08-22 09:13:44,842 - log/train.log - INFO - iteration:2 step:656/1044, NER loss: 4.024833
+2018-08-22 09:13:54,152 - log/train.log - INFO - iteration:2 step:756/1044, NER loss: 4.324289
+2018-08-22 09:14:02,343 - log/train.log - INFO - iteration:2 step:856/1044, NER loss: 4.227139
+2018-08-22 09:14:09,593 - log/train.log - INFO - iteration:2 step:956/1044, NER loss: 3.124279
+2018-08-22 09:14:16,755 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:14:19,599 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3500 phrases; correct: 2949.
+
+2018-08-22 09:14:19,600 - log/train.log - INFO - accuracy:  97.45%; precision:  84.26%; recall:  77.22%; FB1:  80.58
+
+2018-08-22 09:14:19,600 - log/train.log - INFO -               LOC: precision:  84.28%; recall:  82.42%; FB1:  83.34  1908
+
+2018-08-22 09:14:19,600 - log/train.log - INFO -               ORG: precision:  81.08%; recall:  65.35%; FB1:  72.37  793
+
+2018-08-22 09:14:19,600 - log/train.log - INFO -               PER: precision:  87.36%; recall:  78.96%; FB1:  82.95  799
+
+2018-08-22 09:14:19,658 - log/train.log - INFO - new best dev f1 score:80.580
+2018-08-22 09:14:19,842 - log/train.log - INFO - model saved
+2018-08-22 09:14:19,843 - log/train.log - INFO - evaluate:test
+2018-08-22 09:14:25,246 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7068 phrases; correct: 5965.
+
+2018-08-22 09:14:25,246 - log/train.log - INFO - accuracy:  97.40%; precision:  84.39%; recall:  77.40%; FB1:  80.74
+
+2018-08-22 09:14:25,246 - log/train.log - INFO -               LOC: precision:  83.61%; recall:  81.85%; FB1:  82.72  3581
+
+2018-08-22 09:14:25,246 - log/train.log - INFO -               ORG: precision:  82.06%; recall:  65.72%; FB1:  72.99  1750
+
+2018-08-22 09:14:25,246 - log/train.log - INFO -               PER: precision:  88.37%; recall:  82.35%; FB1:  85.25  1737
+
+2018-08-22 09:14:25,306 - log/train.log - INFO - new best test f1 score:80.740
+2018-08-22 09:14:26,087 - log/train.log - INFO - iteration:3 step:12/1044, NER loss: 3.137005
+2018-08-22 09:14:35,343 - log/train.log - INFO - iteration:3 step:112/1044, NER loss: 3.122581
+2018-08-22 09:14:43,215 - log/train.log - INFO - iteration:3 step:212/1044, NER loss: 2.992800
+2018-08-22 09:14:50,836 - log/train.log - INFO - iteration:3 step:312/1044, NER loss: 2.679931
+2018-08-22 09:14:59,108 - log/train.log - INFO - iteration:3 step:412/1044, NER loss: 2.738692
+2018-08-22 09:15:07,179 - log/train.log - INFO - iteration:3 step:512/1044, NER loss: 2.646430
+2018-08-22 09:15:14,835 - log/train.log - INFO - iteration:3 step:612/1044, NER loss: 2.659705
+2018-08-22 09:15:22,864 - log/train.log - INFO - iteration:3 step:712/1044, NER loss: 2.588915
+2018-08-22 09:15:31,084 - log/train.log - INFO - iteration:3 step:812/1044, NER loss: 2.362352
+2018-08-22 09:15:39,522 - log/train.log - INFO - iteration:3 step:912/1044, NER loss: 2.470234
+2018-08-22 09:15:47,479 - log/train.log - INFO - iteration:3 step:1012/1044, NER loss: 2.312569
+2018-08-22 09:15:50,509 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:15:53,372 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3708 phrases; correct: 3167.
+
+2018-08-22 09:15:53,372 - log/train.log - INFO - accuracy:  97.80%; precision:  85.41%; recall:  82.93%; FB1:  84.15
+
+2018-08-22 09:15:53,372 - log/train.log - INFO -               LOC: precision:  87.02%; recall:  85.60%; FB1:  86.30  1919
+
+2018-08-22 09:15:53,372 - log/train.log - INFO -               ORG: precision:  79.49%; recall:  76.02%; FB1:  77.71  941
+
+2018-08-22 09:15:53,372 - log/train.log - INFO -               PER: precision:  88.33%; recall:  84.73%; FB1:  86.49  848
+
+2018-08-22 09:15:53,431 - log/train.log - INFO - new best dev f1 score:84.150
+2018-08-22 09:15:53,622 - log/train.log - INFO - model saved
+2018-08-22 09:15:53,622 - log/train.log - INFO - evaluate:test
+2018-08-22 09:15:58,971 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7564 phrases; correct: 6399.
+
+2018-08-22 09:15:58,971 - log/train.log - INFO - accuracy:  97.61%; precision:  84.60%; recall:  83.03%; FB1:  83.81
+
+2018-08-22 09:15:58,971 - log/train.log - INFO -               LOC: precision:  86.96%; recall:  86.09%; FB1:  86.52  3621
+
+2018-08-22 09:15:58,971 - log/train.log - INFO -               ORG: precision:  77.13%; recall:  75.01%; FB1:  76.06  2125
+
+2018-08-22 09:15:58,971 - log/train.log - INFO -               PER: precision:  88.61%; recall:  86.43%; FB1:  87.51  1818
+
+2018-08-22 09:15:59,036 - log/train.log - INFO - new best test f1 score:83.810
+2018-08-22 09:16:04,511 - log/train.log - INFO - iteration:4 step:68/1044, NER loss: 2.285252
+2018-08-22 09:16:13,590 - log/train.log - INFO - iteration:4 step:168/1044, NER loss: 2.521490
+2018-08-22 09:16:21,182 - log/train.log - INFO - iteration:4 step:268/1044, NER loss: 1.831090
+2018-08-22 09:16:30,080 - log/train.log - INFO - iteration:4 step:368/1044, NER loss: 2.221105
+2018-08-22 09:16:37,185 - log/train.log - INFO - iteration:4 step:468/1044, NER loss: 1.747074
+2018-08-22 09:16:45,572 - log/train.log - INFO - iteration:4 step:568/1044, NER loss: 2.000360
+2018-08-22 09:16:54,592 - log/train.log - INFO - iteration:4 step:668/1044, NER loss: 2.048198
+2018-08-22 09:17:02,126 - log/train.log - INFO - iteration:4 step:768/1044, NER loss: 1.757108
+2018-08-22 09:17:09,652 - log/train.log - INFO - iteration:4 step:868/1044, NER loss: 1.836984
+2018-08-22 09:17:18,114 - log/train.log - INFO - iteration:4 step:968/1044, NER loss: 1.962208
+2018-08-22 09:17:24,270 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:17:27,135 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3741 phrases; correct: 3248.
+
+2018-08-22 09:17:27,135 - log/train.log - INFO - accuracy:  98.04%; precision:  86.82%; recall:  85.05%; FB1:  85.93
+
+2018-08-22 09:17:27,135 - log/train.log - INFO -               LOC: precision:  87.91%; recall:  87.60%; FB1:  87.75  1944
+
+2018-08-22 09:17:27,135 - log/train.log - INFO -               ORG: precision:  82.24%; recall:  76.73%; FB1:  79.39  918
+
+2018-08-22 09:17:27,135 - log/train.log - INFO -               PER: precision:  89.19%; recall:  88.69%; FB1:  88.94  879
+
+2018-08-22 09:17:27,196 - log/train.log - INFO - new best dev f1 score:85.930
+2018-08-22 09:17:27,384 - log/train.log - INFO - model saved
+2018-08-22 09:17:27,384 - log/train.log - INFO - evaluate:test
+2018-08-22 09:17:32,722 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7606 phrases; correct: 6581.
+
+2018-08-22 09:17:32,722 - log/train.log - INFO - accuracy:  97.98%; precision:  86.52%; recall:  85.39%; FB1:  85.95
+
+2018-08-22 09:17:32,722 - log/train.log - INFO -               LOC: precision:  87.35%; recall:  87.94%; FB1:  87.64  3683
+
+2018-08-22 09:17:32,722 - log/train.log - INFO -               ORG: precision:  81.85%; recall:  76.98%; FB1:  79.34  2055
+
+2018-08-22 09:17:32,722 - log/train.log - INFO -               PER: precision:  90.04%; recall:  90.24%; FB1:  90.14  1868
+
+2018-08-22 09:17:32,782 - log/train.log - INFO - new best test f1 score:85.950
+2018-08-22 09:17:34,932 - log/train.log - INFO - iteration:5 step:24/1044, NER loss: 1.743622
+2018-08-22 09:17:42,705 - log/train.log - INFO - iteration:5 step:124/1044, NER loss: 1.499848
+2018-08-22 09:17:51,417 - log/train.log - INFO - iteration:5 step:224/1044, NER loss: 1.604059
+2018-08-22 09:17:59,549 - log/train.log - INFO - iteration:5 step:324/1044, NER loss: 1.747662
+2018-08-22 09:18:07,888 - log/train.log - INFO - iteration:5 step:424/1044, NER loss: 1.536381
+2018-08-22 09:18:17,387 - log/train.log - INFO - iteration:5 step:524/1044, NER loss: 1.913645
+2018-08-22 09:18:25,153 - log/train.log - INFO - iteration:5 step:624/1044, NER loss: 1.323505
+2018-08-22 09:18:32,688 - log/train.log - INFO - iteration:5 step:724/1044, NER loss: 1.289326
+2018-08-22 09:18:40,674 - log/train.log - INFO - iteration:5 step:824/1044, NER loss: 1.437008
+2018-08-22 09:18:49,113 - log/train.log - INFO - iteration:5 step:924/1044, NER loss: 1.384426
+2018-08-22 09:18:56,412 - log/train.log - INFO - iteration:5 step:1024/1044, NER loss: 1.410886
+2018-08-22 09:18:58,078 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:19:00,948 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3724 phrases; correct: 3281.
+
+2018-08-22 09:19:00,948 - log/train.log - INFO - accuracy:  98.16%; precision:  88.10%; recall:  85.91%; FB1:  86.99
+
+2018-08-22 09:19:00,948 - log/train.log - INFO -               LOC: precision:  89.24%; recall:  87.54%; FB1:  88.38  1914
+
+2018-08-22 09:19:00,948 - log/train.log - INFO -               ORG: precision:  81.45%; recall:  80.79%; FB1:  81.12  976
+
+2018-08-22 09:19:00,948 - log/train.log - INFO -               PER: precision:  93.29%; recall:  88.01%; FB1:  90.57  834
+
+2018-08-22 09:19:01,014 - log/train.log - INFO - new best dev f1 score:86.990
+2018-08-22 09:19:01,199 - log/train.log - INFO - model saved
+2018-08-22 09:19:01,200 - log/train.log - INFO - evaluate:test
+2018-08-22 09:19:06,576 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7609 phrases; correct: 6658.
+
+2018-08-22 09:19:06,576 - log/train.log - INFO - accuracy:  98.07%; precision:  87.50%; recall:  86.39%; FB1:  86.94
+
+2018-08-22 09:19:06,577 - log/train.log - INFO -               LOC: precision:  88.80%; recall:  88.66%; FB1:  88.73  3652
+
+2018-08-22 09:19:06,577 - log/train.log - INFO -               ORG: precision:  80.51%; recall:  79.77%; FB1:  80.14  2165
+
+2018-08-22 09:19:06,577 - log/train.log - INFO -               PER: precision:  93.30%; recall:  89.70%; FB1:  91.47  1792
+
+2018-08-22 09:19:06,637 - log/train.log - INFO - new best test f1 score:86.940
+2018-08-22 09:19:14,046 - log/train.log - INFO - iteration:6 step:80/1044, NER loss: 1.310578
+2018-08-22 09:19:22,159 - log/train.log - INFO - iteration:6 step:180/1044, NER loss: 1.293421
+2018-08-22 09:19:30,033 - log/train.log - INFO - iteration:6 step:280/1044, NER loss: 1.332548
+2018-08-22 09:19:38,381 - log/train.log - INFO - iteration:6 step:380/1044, NER loss: 1.278436
+2018-08-22 09:19:45,750 - log/train.log - INFO - iteration:6 step:480/1044, NER loss: 1.086585
+2018-08-22 09:19:53,877 - log/train.log - INFO - iteration:6 step:580/1044, NER loss: 1.282173
+2018-08-22 09:20:01,133 - log/train.log - INFO - iteration:6 step:680/1044, NER loss: 1.024561
+2018-08-22 09:20:10,206 - log/train.log - INFO - iteration:6 step:780/1044, NER loss: 1.239105
+2018-08-22 09:20:17,987 - log/train.log - INFO - iteration:6 step:880/1044, NER loss: 1.161127
+2018-08-22 09:20:27,048 - log/train.log - INFO - iteration:6 step:980/1044, NER loss: 1.463309
+2018-08-22 09:20:31,987 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:20:34,860 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3630 phrases; correct: 3287.
+
+2018-08-22 09:20:34,860 - log/train.log - INFO - accuracy:  98.35%; precision:  90.55%; recall:  86.07%; FB1:  88.25
+
+2018-08-22 09:20:34,860 - log/train.log - INFO -               LOC: precision:  90.84%; recall:  88.93%; FB1:  89.87  1910
+
+2018-08-22 09:20:34,860 - log/train.log - INFO -               ORG: precision:  85.57%; recall:  79.57%; FB1:  82.46  915
+
+2018-08-22 09:20:34,860 - log/train.log - INFO -               PER: precision:  95.53%; recall:  86.99%; FB1:  91.06  805
+
+2018-08-22 09:20:34,921 - log/train.log - INFO - new best dev f1 score:88.250
+2018-08-22 09:20:35,104 - log/train.log - INFO - model saved
+2018-08-22 09:20:35,105 - log/train.log - INFO - evaluate:test
+2018-08-22 09:20:40,487 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7413 phrases; correct: 6668.
+
+2018-08-22 09:20:40,487 - log/train.log - INFO - accuracy:  98.27%; precision:  89.95%; recall:  86.52%; FB1:  88.20
+
+2018-08-22 09:20:40,487 - log/train.log - INFO -               LOC: precision:  90.40%; recall:  90.35%; FB1:  90.37  3656
+
+2018-08-22 09:20:40,487 - log/train.log - INFO -               ORG: precision:  84.90%; recall:  78.76%; FB1:  81.72  2027
+
+2018-08-22 09:20:40,487 - log/train.log - INFO -               PER: precision:  94.91%; recall:  88.09%; FB1:  91.37  1730
+
+2018-08-22 09:20:40,549 - log/train.log - INFO - new best test f1 score:88.200
+2018-08-22 09:20:43,559 - log/train.log - INFO - iteration:7 step:36/1044, NER loss: 1.108802
+2018-08-22 09:20:51,554 - log/train.log - INFO - iteration:7 step:136/1044, NER loss: 1.073278
+2018-08-22 09:20:59,665 - log/train.log - INFO - iteration:7 step:236/1044, NER loss: 0.995443
+2018-08-22 09:21:07,978 - log/train.log - INFO - iteration:7 step:336/1044, NER loss: 1.093341
+2018-08-22 09:21:16,363 - log/train.log - INFO - iteration:7 step:436/1044, NER loss: 1.035019
+2018-08-22 09:21:25,217 - log/train.log - INFO - iteration:7 step:536/1044, NER loss: 1.159411
+2018-08-22 09:21:34,010 - log/train.log - INFO - iteration:7 step:636/1044, NER loss: 1.053265
+2018-08-22 09:21:42,316 - log/train.log - INFO - iteration:7 step:736/1044, NER loss: 1.057081
+2018-08-22 09:21:49,677 - log/train.log - INFO - iteration:7 step:836/1044, NER loss: 0.950013
+2018-08-22 09:21:57,248 - log/train.log - INFO - iteration:7 step:936/1044, NER loss: 0.930615
+2018-08-22 09:22:05,063 - log/train.log - INFO - iteration:7 step:1036/1044, NER loss: 1.002804
+2018-08-22 09:22:05,886 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:22:08,752 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3657 phrases; correct: 3315.
+
+2018-08-22 09:22:08,752 - log/train.log - INFO - accuracy:  98.36%; precision:  90.65%; recall:  86.80%; FB1:  88.68
+
+2018-08-22 09:22:08,752 - log/train.log - INFO -               LOC: precision:  92.84%; recall:  87.75%; FB1:  90.22  1844
+
+2018-08-22 09:22:08,752 - log/train.log - INFO -               ORG: precision:  84.08%; recall:  82.11%; FB1:  83.08  961
+
+2018-08-22 09:22:08,752 - log/train.log - INFO -               PER: precision:  93.31%; recall:  89.93%; FB1:  91.59  852
+
+2018-08-22 09:22:08,814 - log/train.log - INFO - new best dev f1 score:88.680
+2018-08-22 09:22:08,998 - log/train.log - INFO - model saved
+2018-08-22 09:22:08,999 - log/train.log - INFO - evaluate:test
+2018-08-22 09:22:14,423 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7445 phrases; correct: 6721.
+
+2018-08-22 09:22:14,423 - log/train.log - INFO - accuracy:  98.35%; precision:  90.28%; recall:  87.21%; FB1:  88.71
+
+2018-08-22 09:22:14,423 - log/train.log - INFO -               LOC: precision:  92.48%; recall:  88.74%; FB1:  90.57  3510
+
+2018-08-22 09:22:14,423 - log/train.log - INFO -               ORG: precision:  84.63%; recall:  81.14%; FB1:  82.85  2095
+
+2018-08-22 09:22:14,423 - log/train.log - INFO -               PER: precision:  92.50%; recall:  91.31%; FB1:  91.90  1840
+
+2018-08-22 09:22:14,485 - log/train.log - INFO - new best test f1 score:88.710
+2018-08-22 09:22:21,521 - log/train.log - INFO - iteration:8 step:92/1044, NER loss: 0.859871
+2018-08-22 09:22:29,959 - log/train.log - INFO - iteration:8 step:192/1044, NER loss: 0.801216
+2018-08-22 09:22:38,500 - log/train.log - INFO - iteration:8 step:292/1044, NER loss: 0.922518
+2018-08-22 09:22:46,663 - log/train.log - INFO - iteration:8 step:392/1044, NER loss: 0.841957
+2018-08-22 09:22:54,225 - log/train.log - INFO - iteration:8 step:492/1044, NER loss: 0.822927
+2018-08-22 09:23:01,633 - log/train.log - INFO - iteration:8 step:592/1044, NER loss: 0.880991
+2018-08-22 09:23:09,692 - log/train.log - INFO - iteration:8 step:692/1044, NER loss: 0.886797
+2018-08-22 09:23:17,735 - log/train.log - INFO - iteration:8 step:792/1044, NER loss: 1.024509
+2018-08-22 09:23:25,609 - log/train.log - INFO - iteration:8 step:892/1044, NER loss: 0.910346
+2018-08-22 09:23:35,230 - log/train.log - INFO - iteration:8 step:992/1044, NER loss: 0.896268
+2018-08-22 09:23:39,842 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:23:42,686 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3846 phrases; correct: 3392.
+
+2018-08-22 09:23:42,686 - log/train.log - INFO - accuracy:  98.34%; precision:  88.20%; recall:  88.82%; FB1:  88.51
+
+2018-08-22 09:23:42,686 - log/train.log - INFO -               LOC: precision:  90.20%; recall:  89.60%; FB1:  89.89  1938
+
+2018-08-22 09:23:42,686 - log/train.log - INFO -               ORG: precision:  83.25%; recall:  84.35%; FB1:  83.80  997
+
+2018-08-22 09:23:42,686 - log/train.log - INFO -               PER: precision:  89.35%; recall:  92.08%; FB1:  90.70  911
+
+2018-08-22 09:23:42,689 - log/train.log - INFO - evaluate:test
+2018-08-22 09:23:48,102 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7835 phrases; correct: 6866.
+
+2018-08-22 09:23:48,102 - log/train.log - INFO - accuracy:  98.25%; precision:  87.63%; recall:  89.09%; FB1:  88.35
+
+2018-08-22 09:23:48,103 - log/train.log - INFO -               LOC: precision:  89.71%; recall:  90.76%; FB1:  90.23  3701
+
+2018-08-22 09:23:48,103 - log/train.log - INFO -               ORG: precision:  82.63%; recall:  82.93%; FB1:  82.78  2193
+
+2018-08-22 09:23:48,103 - log/train.log - INFO -               PER: precision:  89.34%; recall:  93.03%; FB1:  91.14  1941
+
+2018-08-22 09:23:52,253 - log/train.log - INFO - iteration:9 step:48/1044, NER loss: 0.830040
+2018-08-22 09:24:00,023 - log/train.log - INFO - iteration:9 step:148/1044, NER loss: 0.683528
+2018-08-22 09:24:07,974 - log/train.log - INFO - iteration:9 step:248/1044, NER loss: 0.799183
+2018-08-22 09:24:15,378 - log/train.log - INFO - iteration:9 step:348/1044, NER loss: 0.651262
+2018-08-22 09:24:22,932 - log/train.log - INFO - iteration:9 step:448/1044, NER loss: 0.720468
+2018-08-22 09:24:30,940 - log/train.log - INFO - iteration:9 step:548/1044, NER loss: 0.791327
+2018-08-22 09:24:40,025 - log/train.log - INFO - iteration:9 step:648/1044, NER loss: 0.889957
+2018-08-22 09:24:48,151 - log/train.log - INFO - iteration:9 step:748/1044, NER loss: 0.848880
+2018-08-22 09:24:55,949 - log/train.log - INFO - iteration:9 step:848/1044, NER loss: 0.677529
+2018-08-22 09:25:04,214 - log/train.log - INFO - iteration:9 step:948/1044, NER loss: 0.828302
+2018-08-22 09:25:13,564 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:25:16,407 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3775 phrases; correct: 3377.
+
+2018-08-22 09:25:16,407 - log/train.log - INFO - accuracy:  98.41%; precision:  89.46%; recall:  88.43%; FB1:  88.94
+
+2018-08-22 09:25:16,407 - log/train.log - INFO -               LOC: precision:  90.38%; recall:  90.52%; FB1:  90.45  1954
+
+2018-08-22 09:25:16,407 - log/train.log - INFO -               ORG: precision:  84.99%; recall:  82.32%; FB1:  83.63  953
+
+2018-08-22 09:25:16,407 - log/train.log - INFO -               PER: precision:  92.28%; recall:  90.61%; FB1:  91.44  868
+
+2018-08-22 09:25:16,469 - log/train.log - INFO - new best dev f1 score:88.940
+2018-08-22 09:25:16,656 - log/train.log - INFO - model saved
+2018-08-22 09:25:16,656 - log/train.log - INFO - evaluate:test
+2018-08-22 09:25:22,063 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7712 phrases; correct: 6844.
+
+2018-08-22 09:25:22,063 - log/train.log - INFO - accuracy:  98.32%; precision:  88.74%; recall:  88.80%; FB1:  88.77
+
+2018-08-22 09:25:22,063 - log/train.log - INFO -               LOC: precision:  89.72%; recall:  91.36%; FB1:  90.53  3725
+
+2018-08-22 09:25:22,063 - log/train.log - INFO -               ORG: precision:  83.11%; recall:  81.51%; FB1:  82.30  2143
+
+2018-08-22 09:25:22,063 - log/train.log - INFO -               PER: precision:  93.33%; recall:  92.33%; FB1:  92.83  1844
+
+2018-08-22 09:25:22,125 - log/train.log - INFO - new best test f1 score:88.770
+2018-08-22 09:25:22,460 - log/train.log - INFO - iteration:10 step:4/1044, NER loss: 0.802706
+2018-08-22 09:25:30,447 - log/train.log - INFO - iteration:10 step:104/1044, NER loss: 0.672527
+2018-08-22 09:25:38,467 - log/train.log - INFO - iteration:10 step:204/1044, NER loss: 0.607646
+2018-08-22 09:25:47,086 - log/train.log - INFO - iteration:10 step:304/1044, NER loss: 0.731986
+2018-08-22 09:25:54,685 - log/train.log - INFO - iteration:10 step:404/1044, NER loss: 0.686629
+2018-08-22 09:26:01,708 - log/train.log - INFO - iteration:10 step:504/1044, NER loss: 0.613661
+2018-08-22 09:26:11,486 - log/train.log - INFO - iteration:10 step:604/1044, NER loss: 0.821668
+2018-08-22 09:26:19,427 - log/train.log - INFO - iteration:10 step:704/1044, NER loss: 0.601920
+2018-08-22 09:26:28,421 - log/train.log - INFO - iteration:10 step:804/1044, NER loss: 0.725656
+2018-08-22 09:26:36,150 - log/train.log - INFO - iteration:10 step:904/1044, NER loss: 0.701307
+2018-08-22 09:26:44,433 - log/train.log - INFO - iteration:10 step:1004/1044, NER loss: 0.697318
+2018-08-22 09:26:47,564 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:26:50,402 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3758 phrases; correct: 3375.
+
+2018-08-22 09:26:50,402 - log/train.log - INFO - accuracy:  98.45%; precision:  89.81%; recall:  88.37%; FB1:  89.09
+
+2018-08-22 09:26:50,402 - log/train.log - INFO -               LOC: precision:  90.82%; recall:  89.24%; FB1:  90.02  1917
+
+2018-08-22 09:26:50,402 - log/train.log - INFO -               ORG: precision:  85.35%; recall:  84.04%; FB1:  84.69  969
+
+2018-08-22 09:26:50,402 - log/train.log - INFO -               PER: precision:  92.55%; recall:  91.29%; FB1:  91.91  872
+
+2018-08-22 09:26:50,465 - log/train.log - INFO - new best dev f1 score:89.090
+2018-08-22 09:26:50,654 - log/train.log - INFO - model saved
+2018-08-22 09:26:50,654 - log/train.log - INFO - evaluate:test
+2018-08-22 09:26:56,095 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7675 phrases; correct: 6839.
+
+2018-08-22 09:26:56,096 - log/train.log - INFO - accuracy:  98.31%; precision:  89.11%; recall:  88.74%; FB1:  88.92
+
+2018-08-22 09:26:56,096 - log/train.log - INFO -               LOC: precision:  90.50%; recall:  90.65%; FB1:  90.58  3664
+
+2018-08-22 09:26:56,096 - log/train.log - INFO -               ORG: precision:  83.76%; recall:  82.38%; FB1:  83.06  2149
+
+2018-08-22 09:26:56,096 - log/train.log - INFO -               PER: precision:  92.53%; recall:  92.44%; FB1:  92.49  1862
+
+2018-08-22 09:26:56,159 - log/train.log - INFO - new best test f1 score:88.920
+2018-08-22 09:27:01,076 - log/train.log - INFO - iteration:11 step:60/1044, NER loss: 0.617221
+2018-08-22 09:27:08,867 - log/train.log - INFO - iteration:11 step:160/1044, NER loss: 0.524825
+2018-08-22 09:27:17,478 - log/train.log - INFO - iteration:11 step:260/1044, NER loss: 0.615821
+2018-08-22 09:27:25,710 - log/train.log - INFO - iteration:11 step:360/1044, NER loss: 0.640198
+2018-08-22 09:27:33,823 - log/train.log - INFO - iteration:11 step:460/1044, NER loss: 0.499565
+2018-08-22 09:27:41,961 - log/train.log - INFO - iteration:11 step:560/1044, NER loss: 0.672139
+2018-08-22 09:27:50,233 - log/train.log - INFO - iteration:11 step:660/1044, NER loss: 0.636519
+2018-08-22 09:27:58,466 - log/train.log - INFO - iteration:11 step:760/1044, NER loss: 0.634199
+2018-08-22 09:28:05,949 - log/train.log - INFO - iteration:11 step:860/1044, NER loss: 0.579494
+2018-08-22 09:28:14,646 - log/train.log - INFO - iteration:11 step:960/1044, NER loss: 0.689768
+2018-08-22 09:28:21,552 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:28:24,404 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3715 phrases; correct: 3368.
+
+2018-08-22 09:28:24,404 - log/train.log - INFO - accuracy:  98.48%; precision:  90.66%; recall:  88.19%; FB1:  89.41
+
+2018-08-22 09:28:24,404 - log/train.log - INFO -               LOC: precision:  90.04%; recall:  91.75%; FB1:  90.89  1988
+
+2018-08-22 09:28:24,404 - log/train.log - INFO -               ORG: precision:  89.04%; recall:  79.27%; FB1:  83.87  876
+
+2018-08-22 09:28:24,404 - log/train.log - INFO -               PER: precision:  93.77%; recall:  90.27%; FB1:  91.99  851
+
+2018-08-22 09:28:24,469 - log/train.log - INFO - new best dev f1 score:89.410
+2018-08-22 09:28:24,661 - log/train.log - INFO - model saved
+2018-08-22 09:28:24,662 - log/train.log - INFO - evaluate:test
+2018-08-22 09:28:30,012 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7536 phrases; correct: 6806.
+
+2018-08-22 09:28:30,012 - log/train.log - INFO - accuracy:  98.37%; precision:  90.31%; recall:  88.31%; FB1:  89.30
+
+2018-08-22 09:28:30,012 - log/train.log - INFO -               LOC: precision:  88.90%; recall:  92.81%; FB1:  90.81  3819
+
+2018-08-22 09:28:30,012 - log/train.log - INFO -               ORG: precision:  89.73%; recall:  78.35%; FB1:  83.66  1908
+
+2018-08-22 09:28:30,012 - log/train.log - INFO -               PER: precision:  93.92%; recall:  91.15%; FB1:  92.51  1809
+
+2018-08-22 09:28:30,076 - log/train.log - INFO - new best test f1 score:89.300
+2018-08-22 09:28:31,511 - log/train.log - INFO - iteration:12 step:16/1044, NER loss: 0.719327
+2018-08-22 09:28:40,130 - log/train.log - INFO - iteration:12 step:116/1044, NER loss: 0.544329
+2018-08-22 09:28:47,719 - log/train.log - INFO - iteration:12 step:216/1044, NER loss: 0.496804
+2018-08-22 09:28:55,756 - log/train.log - INFO - iteration:12 step:316/1044, NER loss: 0.534762
+2018-08-22 09:29:05,212 - log/train.log - INFO - iteration:12 step:416/1044, NER loss: 0.552394
+2018-08-22 09:29:13,309 - log/train.log - INFO - iteration:12 step:516/1044, NER loss: 0.590749
+2018-08-22 09:29:20,944 - log/train.log - INFO - iteration:12 step:616/1044, NER loss: 0.574768
+2018-08-22 09:29:30,104 - log/train.log - INFO - iteration:12 step:716/1044, NER loss: 0.561825
+2018-08-22 09:29:37,880 - log/train.log - INFO - iteration:12 step:816/1044, NER loss: 0.545037
+2018-08-22 09:29:45,546 - log/train.log - INFO - iteration:12 step:916/1044, NER loss: 0.522090
+2018-08-22 09:29:53,410 - log/train.log - INFO - iteration:12 step:1016/1044, NER loss: 0.521614
+2018-08-22 09:29:55,540 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:29:58,357 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3750 phrases; correct: 3423.
+
+2018-08-22 09:29:58,357 - log/train.log - INFO - accuracy:  98.69%; precision:  91.28%; recall:  89.63%; FB1:  90.45
+
+2018-08-22 09:29:58,357 - log/train.log - INFO -               LOC: precision:  92.64%; recall:  90.93%; FB1:  91.77  1915
+
+2018-08-22 09:29:58,357 - log/train.log - INFO -               ORG: precision:  87.45%; recall:  84.96%; FB1:  86.19  956
+
+2018-08-22 09:29:58,357 - log/train.log - INFO -               PER: precision:  92.49%; recall:  91.97%; FB1:  92.23  879
+
+2018-08-22 09:29:58,420 - log/train.log - INFO - new best dev f1 score:90.450
+2018-08-22 09:29:58,604 - log/train.log - INFO - model saved
+2018-08-22 09:29:58,604 - log/train.log - INFO - evaluate:test
+2018-08-22 09:30:04,101 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7629 phrases; correct: 6885.
+
+2018-08-22 09:30:04,101 - log/train.log - INFO - accuracy:  98.49%; precision:  90.25%; recall:  89.33%; FB1:  89.79
+
+2018-08-22 09:30:04,101 - log/train.log - INFO -               LOC: precision:  91.79%; recall:  91.36%; FB1:  91.57  3641
+
+2018-08-22 09:30:04,101 - log/train.log - INFO -               ORG: precision:  85.63%; recall:  82.93%; FB1:  84.26  2116
+
+2018-08-22 09:30:04,101 - log/train.log - INFO -               PER: precision:  92.47%; recall:  92.86%; FB1:  92.67  1872
+
+2018-08-22 09:30:04,165 - log/train.log - INFO - new best test f1 score:89.790
+2018-08-22 09:30:09,872 - log/train.log - INFO - iteration:13 step:72/1044, NER loss: 0.495560
+2018-08-22 09:30:17,676 - log/train.log - INFO - iteration:13 step:172/1044, NER loss: 0.472732
+2018-08-22 09:30:25,891 - log/train.log - INFO - iteration:13 step:272/1044, NER loss: 0.448028
+2018-08-22 09:30:33,774 - log/train.log - INFO - iteration:13 step:372/1044, NER loss: 0.429885
+2018-08-22 09:30:42,859 - log/train.log - INFO - iteration:13 step:472/1044, NER loss: 0.556578
+2018-08-22 09:30:50,980 - log/train.log - INFO - iteration:13 step:572/1044, NER loss: 0.501808
+2018-08-22 09:30:59,080 - log/train.log - INFO - iteration:13 step:672/1044, NER loss: 0.536510
+2018-08-22 09:31:07,450 - log/train.log - INFO - iteration:13 step:772/1044, NER loss: 0.527269
+2018-08-22 09:31:15,031 - log/train.log - INFO - iteration:13 step:872/1044, NER loss: 0.447790
+2018-08-22 09:31:23,085 - log/train.log - INFO - iteration:13 step:972/1044, NER loss: 0.542503
+2018-08-22 09:31:29,604 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:31:32,451 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3742 phrases; correct: 3405.
+
+2018-08-22 09:31:32,451 - log/train.log - INFO - accuracy:  98.56%; precision:  90.99%; recall:  89.16%; FB1:  90.07
+
+2018-08-22 09:31:32,451 - log/train.log - INFO -               LOC: precision:  92.21%; recall:  91.59%; FB1:  91.90  1938
+
+2018-08-22 09:31:32,451 - log/train.log - INFO -               ORG: precision:  85.82%; recall:  83.64%; FB1:  84.71  959
+
+2018-08-22 09:31:32,451 - log/train.log - INFO -               PER: precision:  94.08%; recall:  89.93%; FB1:  91.96  845
+
+2018-08-22 09:31:32,453 - log/train.log - INFO - evaluate:test
+2018-08-22 09:31:37,869 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7640 phrases; correct: 6889.
+
+2018-08-22 09:31:37,869 - log/train.log - INFO - accuracy:  98.48%; precision:  90.17%; recall:  89.39%; FB1:  89.78
+
+2018-08-22 09:31:37,869 - log/train.log - INFO -               LOC: precision:  90.89%; recall:  91.69%; FB1:  91.29  3690
+
+2018-08-22 09:31:37,869 - log/train.log - INFO -               ORG: precision:  85.05%; recall:  83.34%; FB1:  84.19  2141
+
+2018-08-22 09:31:37,869 - log/train.log - INFO -               PER: precision:  94.75%; recall:  91.95%; FB1:  93.33  1809
+
+2018-08-22 09:31:40,445 - log/train.log - INFO - iteration:14 step:28/1044, NER loss: 0.504267
+2018-08-22 09:31:49,188 - log/train.log - INFO - iteration:14 step:128/1044, NER loss: 0.393084
+2018-08-22 09:31:57,408 - log/train.log - INFO - iteration:14 step:228/1044, NER loss: 0.464785
+2018-08-22 09:32:05,745 - log/train.log - INFO - iteration:14 step:328/1044, NER loss: 0.437029
+2018-08-22 09:32:13,702 - log/train.log - INFO - iteration:14 step:428/1044, NER loss: 0.468849
+2018-08-22 09:32:21,653 - log/train.log - INFO - iteration:14 step:528/1044, NER loss: 0.423185
+2018-08-22 09:32:29,433 - log/train.log - INFO - iteration:14 step:628/1044, NER loss: 0.460230
+2018-08-22 09:32:37,979 - log/train.log - INFO - iteration:14 step:728/1044, NER loss: 0.454943
+2018-08-22 09:32:45,615 - log/train.log - INFO - iteration:14 step:828/1044, NER loss: 0.398989
+2018-08-22 09:32:53,484 - log/train.log - INFO - iteration:14 step:928/1044, NER loss: 0.483962
+2018-08-22 09:33:01,776 - log/train.log - INFO - iteration:14 step:1028/1044, NER loss: 0.526804
+2018-08-22 09:33:03,355 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:33:06,202 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3724 phrases; correct: 3385.
+
+2018-08-22 09:33:06,202 - log/train.log - INFO - accuracy:  98.53%; precision:  90.90%; recall:  88.64%; FB1:  89.75
+
+2018-08-22 09:33:06,202 - log/train.log - INFO -               LOC: precision:  93.28%; recall:  89.65%; FB1:  91.43  1875
+
+2018-08-22 09:33:06,202 - log/train.log - INFO -               ORG: precision:  82.86%; recall:  86.48%; FB1:  84.63  1027
+
+2018-08-22 09:33:06,202 - log/train.log - INFO -               PER: precision:  95.50%; recall:  88.80%; FB1:  92.03  822
+
+2018-08-22 09:33:06,205 - log/train.log - INFO - evaluate:test
+2018-08-22 09:33:11,769 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7646 phrases; correct: 6908.
+
+2018-08-22 09:33:11,770 - log/train.log - INFO - accuracy:  98.44%; precision:  90.35%; recall:  89.63%; FB1:  89.99
+
+2018-08-22 09:33:11,770 - log/train.log - INFO -               LOC: precision:  92.81%; recall:  90.71%; FB1:  91.75  3575
+
+2018-08-22 09:33:11,770 - log/train.log - INFO -               ORG: precision:  82.66%; recall:  85.95%; FB1:  84.27  2272
+
+2018-08-22 09:33:11,770 - log/train.log - INFO -               PER: precision:  95.16%; recall:  91.85%; FB1:  93.48  1799
+
+2018-08-22 09:33:11,833 - log/train.log - INFO - new best test f1 score:89.990
+2018-08-22 09:33:18,890 - log/train.log - INFO - iteration:15 step:84/1044, NER loss: 0.417188
+2018-08-22 09:33:26,958 - log/train.log - INFO - iteration:15 step:184/1044, NER loss: 0.408568
+2018-08-22 09:33:34,903 - log/train.log - INFO - iteration:15 step:284/1044, NER loss: 0.423008
+2018-08-22 09:33:44,493 - log/train.log - INFO - iteration:15 step:384/1044, NER loss: 0.448889
+2018-08-22 09:33:52,223 - log/train.log - INFO - iteration:15 step:484/1044, NER loss: 0.395003
+2018-08-22 09:34:00,307 - log/train.log - INFO - iteration:15 step:584/1044, NER loss: 0.390572
+2018-08-22 09:34:07,465 - log/train.log - INFO - iteration:15 step:684/1044, NER loss: 0.372332
+2018-08-22 09:34:15,454 - log/train.log - INFO - iteration:15 step:784/1044, NER loss: 0.406646
+2018-08-22 09:34:23,057 - log/train.log - INFO - iteration:15 step:884/1044, NER loss: 0.441069
+2018-08-22 09:34:31,171 - log/train.log - INFO - iteration:15 step:984/1044, NER loss: 0.467026
+2018-08-22 09:34:37,343 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:34:40,196 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3801 phrases; correct: 3429.
+
+2018-08-22 09:34:40,196 - log/train.log - INFO - accuracy:  98.58%; precision:  90.21%; recall:  89.79%; FB1:  90.00
+
+2018-08-22 09:34:40,196 - log/train.log - INFO -               LOC: precision:  89.85%; recall:  92.52%; FB1:  91.16  2009
+
+2018-08-22 09:34:40,196 - log/train.log - INFO -               ORG: precision:  88.07%; recall:  82.52%; FB1:  85.20  922
+
+2018-08-22 09:34:40,196 - log/train.log - INFO -               PER: precision:  93.33%; recall:  91.86%; FB1:  92.59  870
+
+2018-08-22 09:34:40,199 - log/train.log - INFO - evaluate:test
+2018-08-22 09:34:45,549 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7753 phrases; correct: 6930.
+
+2018-08-22 09:34:45,550 - log/train.log - INFO - accuracy:  98.46%; precision:  89.38%; recall:  89.92%; FB1:  89.65
+
+2018-08-22 09:34:45,550 - log/train.log - INFO -               LOC: precision:  88.48%; recall:  92.78%; FB1:  90.58  3836
+
+2018-08-22 09:34:45,550 - log/train.log - INFO -               ORG: precision:  87.65%; recall:  82.52%; FB1:  85.01  2057
+
+2018-08-22 09:34:45,550 - log/train.log - INFO -               PER: precision:  93.17%; recall:  92.97%; FB1:  93.07  1860
+
+2018-08-22 09:34:48,642 - log/train.log - INFO - iteration:16 step:40/1044, NER loss: 0.506427
+2018-08-22 09:34:56,447 - log/train.log - INFO - iteration:16 step:140/1044, NER loss: 0.373082
+2018-08-22 09:35:05,811 - log/train.log - INFO - iteration:16 step:240/1044, NER loss: 0.391158
+2018-08-22 09:35:14,733 - log/train.log - INFO - iteration:16 step:340/1044, NER loss: 0.396949
+2018-08-22 09:35:23,044 - log/train.log - INFO - iteration:16 step:440/1044, NER loss: 0.375216
+2018-08-22 09:35:30,912 - log/train.log - INFO - iteration:16 step:540/1044, NER loss: 0.408458
+2018-08-22 09:35:39,686 - log/train.log - INFO - iteration:16 step:640/1044, NER loss: 0.426138
+2018-08-22 09:35:47,489 - log/train.log - INFO - iteration:16 step:740/1044, NER loss: 0.401254
+2018-08-22 09:35:55,481 - log/train.log - INFO - iteration:16 step:840/1044, NER loss: 0.413909
+2018-08-22 09:36:02,899 - log/train.log - INFO - iteration:16 step:940/1044, NER loss: 0.389191
+2018-08-22 09:36:10,700 - log/train.log - INFO - iteration:16 step:1040/1044, NER loss: 0.430111
+2018-08-22 09:36:10,992 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:36:13,847 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3763 phrases; correct: 3407.
+
+2018-08-22 09:36:13,847 - log/train.log - INFO - accuracy:  98.55%; precision:  90.54%; recall:  89.21%; FB1:  89.87
+
+2018-08-22 09:36:13,847 - log/train.log - INFO -               LOC: precision:  91.83%; recall:  91.03%; FB1:  91.43  1934
+
+2018-08-22 09:36:13,847 - log/train.log - INFO -               ORG: precision:  86.69%; recall:  84.04%; FB1:  85.35  954
+
+2018-08-22 09:36:13,847 - log/train.log - INFO -               PER: precision:  91.89%; recall:  90.95%; FB1:  91.42  875
+
+2018-08-22 09:36:13,849 - log/train.log - INFO - evaluate:test
+2018-08-22 09:36:19,254 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7675 phrases; correct: 6901.
+
+2018-08-22 09:36:19,254 - log/train.log - INFO - accuracy:  98.45%; precision:  89.92%; recall:  89.54%; FB1:  89.73
+
+2018-08-22 09:36:19,254 - log/train.log - INFO -               LOC: precision:  90.74%; recall:  91.63%; FB1:  91.19  3694
+
+2018-08-22 09:36:19,254 - log/train.log - INFO -               ORG: precision:  85.38%; recall:  82.84%; FB1:  84.09  2120
+
+2018-08-22 09:36:19,254 - log/train.log - INFO -               PER: precision:  93.44%; recall:  93.29%; FB1:  93.37  1861
+
+2018-08-22 09:36:26,951 - log/train.log - INFO - iteration:17 step:96/1044, NER loss: 0.334098
+2018-08-22 09:36:34,030 - log/train.log - INFO - iteration:17 step:196/1044, NER loss: 0.321189
+2018-08-22 09:36:43,283 - log/train.log - INFO - iteration:17 step:296/1044, NER loss: 0.403227
+2018-08-22 09:36:51,381 - log/train.log - INFO - iteration:17 step:396/1044, NER loss: 0.357855
+2018-08-22 09:36:59,433 - log/train.log - INFO - iteration:17 step:496/1044, NER loss: 0.299496
+2018-08-22 09:37:07,692 - log/train.log - INFO - iteration:17 step:596/1044, NER loss: 0.393795
+2018-08-22 09:37:15,865 - log/train.log - INFO - iteration:17 step:696/1044, NER loss: 0.371682
+2018-08-22 09:37:24,203 - log/train.log - INFO - iteration:17 step:796/1044, NER loss: 0.388620
+2018-08-22 09:37:32,679 - log/train.log - INFO - iteration:17 step:896/1044, NER loss: 0.413075
+2018-08-22 09:37:41,190 - log/train.log - INFO - iteration:17 step:996/1044, NER loss: 0.414860
+2018-08-22 09:37:44,662 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:37:47,608 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3813 phrases; correct: 3442.
+
+2018-08-22 09:37:47,608 - log/train.log - INFO - accuracy:  98.65%; precision:  90.27%; recall:  90.13%; FB1:  90.20
+
+2018-08-22 09:37:47,608 - log/train.log - INFO -               LOC: precision:  92.06%; recall:  92.11%; FB1:  92.08  1952
+
+2018-08-22 09:37:47,608 - log/train.log - INFO -               ORG: precision:  83.07%; recall:  85.77%; FB1:  84.40  1016
+
+2018-08-22 09:37:47,609 - log/train.log - INFO -               PER: precision:  94.79%; recall:  90.61%; FB1:  92.65  845
+
+2018-08-22 09:37:47,612 - log/train.log - INFO - evaluate:test
+2018-08-22 09:37:53,144 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7808 phrases; correct: 6961.
+
+2018-08-22 09:37:53,144 - log/train.log - INFO - accuracy:  98.48%; precision:  89.15%; recall:  90.32%; FB1:  89.73
+
+2018-08-22 09:37:53,144 - log/train.log - INFO -               LOC: precision:  90.03%; recall:  92.62%; FB1:  91.31  3763
+
+2018-08-22 09:37:53,144 - log/train.log - INFO -               ORG: precision:  82.71%; recall:  85.17%; FB1:  83.92  2250
+
+2018-08-22 09:37:53,144 - log/train.log - INFO -               PER: precision:  95.38%; recall:  91.85%; FB1:  93.58  1795
+
+2018-08-22 09:37:57,026 - log/train.log - INFO - iteration:18 step:52/1044, NER loss: 0.352946
+2018-08-22 09:38:06,388 - log/train.log - INFO - iteration:18 step:152/1044, NER loss: 0.329236
+2018-08-22 09:38:14,049 - log/train.log - INFO - iteration:18 step:252/1044, NER loss: 0.336992
+2018-08-22 09:38:22,588 - log/train.log - INFO - iteration:18 step:352/1044, NER loss: 0.334150
+2018-08-22 09:38:30,988 - log/train.log - INFO - iteration:18 step:452/1044, NER loss: 0.345145
+2018-08-22 09:38:39,794 - log/train.log - INFO - iteration:18 step:552/1044, NER loss: 0.357521
+2018-08-22 09:38:47,749 - log/train.log - INFO - iteration:18 step:652/1044, NER loss: 0.367715
+2018-08-22 09:38:55,962 - log/train.log - INFO - iteration:18 step:752/1044, NER loss: 0.364231
+2018-08-22 09:39:04,317 - log/train.log - INFO - iteration:18 step:852/1044, NER loss: 0.432986
+2018-08-22 09:39:11,415 - log/train.log - INFO - iteration:18 step:952/1044, NER loss: 0.303636
+2018-08-22 09:39:18,659 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:39:21,510 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3692 phrases; correct: 3385.
+
+2018-08-22 09:39:21,510 - log/train.log - INFO - accuracy:  98.61%; precision:  91.68%; recall:  88.64%; FB1:  90.13
+
+2018-08-22 09:39:21,510 - log/train.log - INFO -               LOC: precision:  93.00%; recall:  90.52%; FB1:  91.74  1899
+
+2018-08-22 09:39:21,510 - log/train.log - INFO -               ORG: precision:  86.92%; recall:  84.45%; FB1:  85.67  956
+
+2018-08-22 09:39:21,510 - log/train.log - INFO -               PER: precision:  94.15%; recall:  89.14%; FB1:  91.57  837
+
+2018-08-22 09:39:21,512 - log/train.log - INFO - evaluate:test
+2018-08-22 09:39:26,867 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7555 phrases; correct: 6880.
+
+2018-08-22 09:39:26,868 - log/train.log - INFO - accuracy:  98.49%; precision:  91.07%; recall:  89.27%; FB1:  90.16
+
+2018-08-22 09:39:26,868 - log/train.log - INFO -               LOC: precision:  92.37%; recall:  91.36%; FB1:  91.86  3618
+
+2018-08-22 09:39:26,868 - log/train.log - INFO -               ORG: precision:  85.22%; recall:  83.39%; FB1:  84.29  2138
+
+2018-08-22 09:39:26,868 - log/train.log - INFO -               PER: precision:  95.39%; recall:  92.06%; FB1:  93.69  1799
+
+2018-08-22 09:39:26,932 - log/train.log - INFO - new best test f1 score:90.160
+2018-08-22 09:39:27,551 - log/train.log - INFO - iteration:19 step:8/1044, NER loss: 0.380784
+2018-08-22 09:39:35,918 - log/train.log - INFO - iteration:19 step:108/1044, NER loss: 0.331427
+2018-08-22 09:39:43,346 - log/train.log - INFO - iteration:19 step:208/1044, NER loss: 0.322301
+2018-08-22 09:39:51,097 - log/train.log - INFO - iteration:19 step:308/1044, NER loss: 0.305288
+2018-08-22 09:39:59,751 - log/train.log - INFO - iteration:19 step:408/1044, NER loss: 0.325677
+2018-08-22 09:40:07,885 - log/train.log - INFO - iteration:19 step:508/1044, NER loss: 0.314012
+2018-08-22 09:40:16,913 - log/train.log - INFO - iteration:19 step:608/1044, NER loss: 0.366483
+2018-08-22 09:40:25,160 - log/train.log - INFO - iteration:19 step:708/1044, NER loss: 0.340102
+2018-08-22 09:40:32,392 - log/train.log - INFO - iteration:19 step:808/1044, NER loss: 0.306825
+2018-08-22 09:40:40,539 - log/train.log - INFO - iteration:19 step:908/1044, NER loss: 0.350411
+2018-08-22 09:40:49,126 - log/train.log - INFO - iteration:19 step:1008/1044, NER loss: 0.349004
+2018-08-22 09:40:52,413 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:40:55,253 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3771 phrases; correct: 3430.
+
+2018-08-22 09:40:55,253 - log/train.log - INFO - accuracy:  98.61%; precision:  90.96%; recall:  89.81%; FB1:  90.38
+
+2018-08-22 09:40:55,253 - log/train.log - INFO -               LOC: precision:  91.18%; recall:  92.21%; FB1:  91.69  1973
+
+2018-08-22 09:40:55,253 - log/train.log - INFO -               ORG: precision:  88.42%; recall:  83.84%; FB1:  86.07  933
+
+2018-08-22 09:40:55,253 - log/train.log - INFO -               PER: precision:  93.18%; recall:  91.18%; FB1:  92.17  865
+
+2018-08-22 09:40:55,256 - log/train.log - INFO - evaluate:test
+2018-08-22 09:41:00,686 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7709 phrases; correct: 6946.
+
+2018-08-22 09:41:00,686 - log/train.log - INFO - accuracy:  98.51%; precision:  90.10%; recall:  90.13%; FB1:  90.11
+
+2018-08-22 09:41:00,686 - log/train.log - INFO -               LOC: precision:  90.44%; recall:  92.84%; FB1:  91.62  3755
+
+2018-08-22 09:41:00,686 - log/train.log - INFO -               ORG: precision:  86.54%; recall:  83.25%; FB1:  84.86  2102
+
+2018-08-22 09:41:00,686 - log/train.log - INFO -               PER: precision:  93.47%; recall:  92.86%; FB1:  93.16  1852
+
+2018-08-22 09:41:05,802 - log/train.log - INFO - iteration:20 step:64/1044, NER loss: 0.362724
+2018-08-22 09:41:13,900 - log/train.log - INFO - iteration:20 step:164/1044, NER loss: 0.292006
+2018-08-22 09:41:22,287 - log/train.log - INFO - iteration:20 step:264/1044, NER loss: 0.271368
+2018-08-22 09:41:29,336 - log/train.log - INFO - iteration:20 step:364/1044, NER loss: 0.270262
+2018-08-22 09:41:39,185 - log/train.log - INFO - iteration:20 step:464/1044, NER loss: 0.347567
+2018-08-22 09:41:47,604 - log/train.log - INFO - iteration:20 step:564/1044, NER loss: 0.391022
+2018-08-22 09:41:56,277 - log/train.log - INFO - iteration:20 step:664/1044, NER loss: 0.331097
+2018-08-22 09:42:04,392 - log/train.log - INFO - iteration:20 step:764/1044, NER loss: 0.321027
+2018-08-22 09:42:12,275 - log/train.log - INFO - iteration:20 step:864/1044, NER loss: 0.344180
+2018-08-22 09:42:20,420 - log/train.log - INFO - iteration:20 step:964/1044, NER loss: 0.309661
+2018-08-22 09:42:26,253 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:42:29,110 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3768 phrases; correct: 3423.
+
+2018-08-22 09:42:29,111 - log/train.log - INFO - accuracy:  98.61%; precision:  90.84%; recall:  89.63%; FB1:  90.23
+
+2018-08-22 09:42:29,111 - log/train.log - INFO -               LOC: precision:  91.85%; recall:  91.80%; FB1:  91.82  1950
+
+2018-08-22 09:42:29,111 - log/train.log - INFO -               ORG: precision:  87.49%; recall:  83.84%; FB1:  85.63  943
+
+2018-08-22 09:42:29,111 - log/train.log - INFO -               PER: precision:  92.23%; recall:  91.29%; FB1:  91.76  875
+
+2018-08-22 09:42:29,113 - log/train.log - INFO - evaluate:test
+2018-08-22 09:42:34,545 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7692 phrases; correct: 6970.
+
+2018-08-22 09:42:34,545 - log/train.log - INFO - accuracy:  98.57%; precision:  90.61%; recall:  90.44%; FB1:  90.53
+
+2018-08-22 09:42:34,545 - log/train.log - INFO -               LOC: precision:  91.21%; recall:  92.78%; FB1:  91.99  3721
+
+2018-08-22 09:42:34,545 - log/train.log - INFO -               ORG: precision:  86.87%; recall:  83.89%; FB1:  85.36  2110
+
+2018-08-22 09:42:34,545 - log/train.log - INFO -               PER: precision:  93.66%; recall:  93.51%; FB1:  93.58  1861
+
+2018-08-22 09:42:34,609 - log/train.log - INFO - new best test f1 score:90.530
+2018-08-22 09:42:36,202 - log/train.log - INFO - iteration:21 step:20/1044, NER loss: 0.329570
+2018-08-22 09:42:44,306 - log/train.log - INFO - iteration:21 step:120/1044, NER loss: 0.270098
+2018-08-22 09:42:52,648 - log/train.log - INFO - iteration:21 step:220/1044, NER loss: 0.299021
+2018-08-22 09:43:00,404 - log/train.log - INFO - iteration:21 step:320/1044, NER loss: 0.329976
+2018-08-22 09:43:08,511 - log/train.log - INFO - iteration:21 step:420/1044, NER loss: 0.295863
+2018-08-22 09:43:17,728 - log/train.log - INFO - iteration:21 step:520/1044, NER loss: 0.305320
+2018-08-22 09:43:25,390 - log/train.log - INFO - iteration:21 step:620/1044, NER loss: 0.257191
+2018-08-22 09:43:33,733 - log/train.log - INFO - iteration:21 step:720/1044, NER loss: 0.291172
+2018-08-22 09:43:41,486 - log/train.log - INFO - iteration:21 step:820/1044, NER loss: 0.298107
+2018-08-22 09:43:50,337 - log/train.log - INFO - iteration:21 step:920/1044, NER loss: 0.355706
+2018-08-22 09:43:58,064 - log/train.log - INFO - iteration:21 step:1020/1044, NER loss: 0.290486
+2018-08-22 09:44:00,099 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:44:02,943 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3729 phrases; correct: 3395.
+
+2018-08-22 09:44:02,943 - log/train.log - INFO - accuracy:  98.52%; precision:  91.04%; recall:  88.90%; FB1:  89.96
+
+2018-08-22 09:44:02,943 - log/train.log - INFO -               LOC: precision:  90.34%; recall:  92.98%; FB1:  91.64  2008
+
+2018-08-22 09:44:02,943 - log/train.log - INFO -               ORG: precision:  89.78%; recall:  78.56%; FB1:  83.79  861
+
+2018-08-22 09:44:02,943 - log/train.log - INFO -               PER: precision:  93.95%; recall:  91.40%; FB1:  92.66  860
+
+2018-08-22 09:44:02,946 - log/train.log - INFO - evaluate:test
+2018-08-22 09:44:08,316 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7613 phrases; correct: 6897.
+
+2018-08-22 09:44:08,316 - log/train.log - INFO - accuracy:  98.38%; precision:  90.60%; recall:  89.49%; FB1:  90.04
+
+2018-08-22 09:44:08,316 - log/train.log - INFO -               LOC: precision:  89.18%; recall:  93.69%; FB1:  91.37  3843
+
+2018-08-22 09:44:08,316 - log/train.log - INFO -               ORG: precision:  89.67%; recall:  79.50%; FB1:  84.28  1937
+
+2018-08-22 09:44:08,316 - log/train.log - INFO -               PER: precision:  94.54%; recall:  92.97%; FB1:  93.75  1833
+
+2018-08-22 09:44:14,788 - log/train.log - INFO - iteration:22 step:76/1044, NER loss: 0.299416
+2018-08-22 09:44:21,940 - log/train.log - INFO - iteration:22 step:176/1044, NER loss: 0.226569
+2018-08-22 09:44:29,906 - log/train.log - INFO - iteration:22 step:276/1044, NER loss: 0.276084
+2018-08-22 09:44:37,710 - log/train.log - INFO - iteration:22 step:376/1044, NER loss: 0.282894
+2018-08-22 09:44:45,978 - log/train.log - INFO - iteration:22 step:476/1044, NER loss: 0.291277
+2018-08-22 09:44:53,544 - log/train.log - INFO - iteration:22 step:576/1044, NER loss: 0.289893
+2018-08-22 09:45:01,418 - log/train.log - INFO - iteration:22 step:676/1044, NER loss: 0.282389
+2018-08-22 09:45:09,330 - log/train.log - INFO - iteration:22 step:776/1044, NER loss: 0.277894
+2018-08-22 09:45:18,904 - log/train.log - INFO - iteration:22 step:876/1044, NER loss: 0.359881
+2018-08-22 09:45:28,138 - log/train.log - INFO - iteration:22 step:976/1044, NER loss: 0.345124
+2018-08-22 09:45:33,672 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:45:36,531 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3869 phrases; correct: 3456.
+
+2018-08-22 09:45:36,531 - log/train.log - INFO - accuracy:  98.55%; precision:  89.33%; recall:  90.49%; FB1:  89.91
+
+2018-08-22 09:45:36,531 - log/train.log - INFO -               LOC: precision:  91.51%; recall:  91.13%; FB1:  91.32  1943
+
+2018-08-22 09:45:36,531 - log/train.log - INFO -               ORG: precision:  83.02%; recall:  88.41%; FB1:  85.63  1048
+
+2018-08-22 09:45:36,531 - log/train.log - INFO -               PER: precision:  92.03%; recall:  91.40%; FB1:  91.71  878
+
+2018-08-22 09:45:36,533 - log/train.log - INFO - evaluate:test
+2018-08-22 09:45:42,024 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7901 phrases; correct: 6998.
+
+2018-08-22 09:45:42,024 - log/train.log - INFO - accuracy:  98.33%; precision:  88.57%; recall:  90.80%; FB1:  89.67
+
+2018-08-22 09:45:42,024 - log/train.log - INFO -               LOC: precision:  90.78%; recall:  91.50%; FB1:  91.14  3687
+
+2018-08-22 09:45:42,024 - log/train.log - INFO -               ORG: precision:  81.38%; recall:  87.00%; FB1:  84.10  2336
+
+2018-08-22 09:45:42,024 - log/train.log - INFO -               PER: precision:  93.18%; recall:  93.88%; FB1:  93.53  1878
+
+2018-08-22 09:45:44,512 - log/train.log - INFO - iteration:23 step:32/1044, NER loss: 0.293479
+2018-08-22 09:45:52,827 - log/train.log - INFO - iteration:23 step:132/1044, NER loss: 0.267020
+2018-08-22 09:46:02,471 - log/train.log - INFO - iteration:23 step:232/1044, NER loss: 0.271630
+2018-08-22 09:46:11,547 - log/train.log - INFO - iteration:23 step:332/1044, NER loss: 0.234723
+2018-08-22 09:46:19,292 - log/train.log - INFO - iteration:23 step:432/1044, NER loss: 0.247873
+2018-08-22 09:46:26,770 - log/train.log - INFO - iteration:23 step:532/1044, NER loss: 0.259040
+2018-08-22 09:46:34,462 - log/train.log - INFO - iteration:23 step:632/1044, NER loss: 0.262299
+2018-08-22 09:46:42,347 - log/train.log - INFO - iteration:23 step:732/1044, NER loss: 0.299825
+2018-08-22 09:46:50,835 - log/train.log - INFO - iteration:23 step:832/1044, NER loss: 0.294626
+2018-08-22 09:46:58,687 - log/train.log - INFO - iteration:23 step:932/1044, NER loss: 0.315715
+2018-08-22 09:47:06,375 - log/train.log - INFO - iteration:23 step:1032/1044, NER loss: 0.271948
+2018-08-22 09:47:07,487 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:47:10,329 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3766 phrases; correct: 3446.
+
+2018-08-22 09:47:10,329 - log/train.log - INFO - accuracy:  98.69%; precision:  91.50%; recall:  90.23%; FB1:  90.86
+
+2018-08-22 09:47:10,329 - log/train.log - INFO -               LOC: precision:  93.12%; recall:  92.31%; FB1:  92.72  1934
+
+2018-08-22 09:47:10,329 - log/train.log - INFO -               ORG: precision:  87.16%; recall:  84.86%; FB1:  85.99  958
+
+2018-08-22 09:47:10,329 - log/train.log - INFO -               PER: precision:  92.68%; recall:  91.63%; FB1:  92.15  874
+
+2018-08-22 09:47:10,394 - log/train.log - INFO - new best dev f1 score:90.860
+2018-08-22 09:47:10,584 - log/train.log - INFO - model saved
+2018-08-22 09:47:10,584 - log/train.log - INFO - evaluate:test
+2018-08-22 09:47:15,975 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7712 phrases; correct: 7003.
+
+2018-08-22 09:47:15,975 - log/train.log - INFO - accuracy:  98.61%; precision:  90.81%; recall:  90.87%; FB1:  90.84
+
+2018-08-22 09:47:15,975 - log/train.log - INFO -               LOC: precision:  91.34%; recall:  92.59%; FB1:  91.96  3708
+
+2018-08-22 09:47:15,975 - log/train.log - INFO -               ORG: precision:  86.95%; recall:  85.40%; FB1:  86.17  2146
+
+2018-08-22 09:47:15,975 - log/train.log - INFO -               PER: precision:  94.19%; recall:  93.88%; FB1:  94.04  1858
+
+2018-08-22 09:47:16,040 - log/train.log - INFO - new best test f1 score:90.840
+2018-08-22 09:47:23,289 - log/train.log - INFO - iteration:24 step:88/1044, NER loss: 0.274348
+2018-08-22 09:47:31,634 - log/train.log - INFO - iteration:24 step:188/1044, NER loss: 0.203920
+2018-08-22 09:47:40,776 - log/train.log - INFO - iteration:24 step:288/1044, NER loss: 0.249247
+2018-08-22 09:47:47,957 - log/train.log - INFO - iteration:24 step:388/1044, NER loss: 0.225566
+2018-08-22 09:47:55,155 - log/train.log - INFO - iteration:24 step:488/1044, NER loss: 0.258497
+2018-08-22 09:48:03,899 - log/train.log - INFO - iteration:24 step:588/1044, NER loss: 0.273161
+2018-08-22 09:48:12,498 - log/train.log - INFO - iteration:24 step:688/1044, NER loss: 0.285916
+2018-08-22 09:48:21,356 - log/train.log - INFO - iteration:24 step:788/1044, NER loss: 0.287750
+2018-08-22 09:48:29,413 - log/train.log - INFO - iteration:24 step:888/1044, NER loss: 0.327997
+2018-08-22 09:48:37,338 - log/train.log - INFO - iteration:24 step:988/1044, NER loss: 0.274154
+2018-08-22 09:48:41,530 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:48:44,398 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3790 phrases; correct: 3462.
+
+2018-08-22 09:48:44,398 - log/train.log - INFO - accuracy:  98.75%; precision:  91.35%; recall:  90.65%; FB1:  91.00
+
+2018-08-22 09:48:44,398 - log/train.log - INFO -               LOC: precision:  91.59%; recall:  93.23%; FB1:  92.41  1986
+
+2018-08-22 09:48:44,398 - log/train.log - INFO -               ORG: precision:  88.76%; recall:  84.25%; FB1:  86.44  934
+
+2018-08-22 09:48:44,398 - log/train.log - INFO -               PER: precision:  93.56%; recall:  92.08%; FB1:  92.82  870
+
+2018-08-22 09:48:44,462 - log/train.log - INFO - new best dev f1 score:91.000
+2018-08-22 09:48:44,645 - log/train.log - INFO - model saved
+2018-08-22 09:48:44,646 - log/train.log - INFO - evaluate:test
+2018-08-22 09:48:50,008 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7797 phrases; correct: 7014.
+
+2018-08-22 09:48:50,008 - log/train.log - INFO - accuracy:  98.56%; precision:  89.96%; recall:  91.01%; FB1:  90.48
+
+2018-08-22 09:48:50,009 - log/train.log - INFO -               LOC: precision:  89.74%; recall:  93.30%; FB1:  91.49  3803
+
+2018-08-22 09:48:50,009 - log/train.log - INFO -               ORG: precision:  87.23%; recall:  85.35%; FB1:  86.28  2138
+
+2018-08-22 09:48:50,009 - log/train.log - INFO -               PER: precision:  93.53%; recall:  93.13%; FB1:  93.33  1856
+
+2018-08-22 09:48:53,497 - log/train.log - INFO - iteration:25 step:44/1044, NER loss: 0.261363
+2018-08-22 09:49:01,050 - log/train.log - INFO - iteration:25 step:144/1044, NER loss: 0.221024
+2018-08-22 09:49:08,582 - log/train.log - INFO - iteration:25 step:244/1044, NER loss: 0.215250
+2018-08-22 09:49:17,168 - log/train.log - INFO - iteration:25 step:344/1044, NER loss: 0.280402
+2018-08-22 09:49:26,155 - log/train.log - INFO - iteration:25 step:444/1044, NER loss: 0.268907
+2018-08-22 09:49:35,664 - log/train.log - INFO - iteration:25 step:544/1044, NER loss: 0.252042
+2018-08-22 09:49:43,054 - log/train.log - INFO - iteration:25 step:644/1044, NER loss: 0.233025
+2018-08-22 09:49:51,369 - log/train.log - INFO - iteration:25 step:744/1044, NER loss: 0.310058
+2018-08-22 09:49:59,211 - log/train.log - INFO - iteration:25 step:844/1044, NER loss: 0.236351
+2018-08-22 09:50:07,447 - log/train.log - INFO - iteration:25 step:944/1044, NER loss: 0.300299
+2018-08-22 09:50:15,323 - log/train.log - INFO - iteration:26 step:0/1044, NER loss: 0.298847
+2018-08-22 09:50:15,324 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:50:18,206 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3741 phrases; correct: 3427.
+
+2018-08-22 09:50:18,206 - log/train.log - INFO - accuracy:  98.66%; precision:  91.61%; recall:  89.74%; FB1:  90.66
+
+2018-08-22 09:50:18,206 - log/train.log - INFO -               LOC: precision:  91.53%; recall:  93.08%; FB1:  92.30  1984
+
+2018-08-22 09:50:18,206 - log/train.log - INFO -               ORG: precision:  89.38%; recall:  82.93%; FB1:  86.03  913
+
+2018-08-22 09:50:18,206 - log/train.log - INFO -               PER: precision:  94.19%; recall:  89.93%; FB1:  92.01  844
+
+2018-08-22 09:50:18,210 - log/train.log - INFO - evaluate:test
+2018-08-22 09:50:23,619 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7629 phrases; correct: 6932.
+
+2018-08-22 09:50:23,619 - log/train.log - INFO - accuracy:  98.56%; precision:  90.86%; recall:  89.94%; FB1:  90.40
+
+2018-08-22 09:50:23,619 - log/train.log - INFO -               LOC: precision:  90.44%; recall:  92.81%; FB1:  91.61  3754
+
+2018-08-22 09:50:23,619 - log/train.log - INFO -               ORG: precision:  87.87%; recall:  82.52%; FB1:  85.11  2052
+
+2018-08-22 09:50:23,619 - log/train.log - INFO -               PER: precision:  95.12%; recall:  93.03%; FB1:  94.06  1823
+
+2018-08-22 09:50:32,332 - log/train.log - INFO - iteration:26 step:100/1044, NER loss: 0.204448
+2018-08-22 09:50:40,368 - log/train.log - INFO - iteration:26 step:200/1044, NER loss: 0.261675
+2018-08-22 09:50:48,498 - log/train.log - INFO - iteration:26 step:300/1044, NER loss: 0.245815
+2018-08-22 09:50:56,882 - log/train.log - INFO - iteration:26 step:400/1044, NER loss: 0.252001
+2018-08-22 09:51:05,140 - log/train.log - INFO - iteration:26 step:500/1044, NER loss: 0.216232
+2018-08-22 09:51:13,006 - log/train.log - INFO - iteration:26 step:600/1044, NER loss: 0.235908
+2018-08-22 09:51:21,201 - log/train.log - INFO - iteration:26 step:700/1044, NER loss: 0.248607
+2018-08-22 09:51:30,260 - log/train.log - INFO - iteration:26 step:800/1044, NER loss: 0.285875
+2018-08-22 09:51:37,755 - log/train.log - INFO - iteration:26 step:900/1044, NER loss: 0.265984
+2018-08-22 09:51:45,645 - log/train.log - INFO - iteration:26 step:1000/1044, NER loss: 0.275141
+2018-08-22 09:51:49,055 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:51:51,918 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3769 phrases; correct: 3449.
+
+2018-08-22 09:51:51,919 - log/train.log - INFO - accuracy:  98.68%; precision:  91.51%; recall:  90.31%; FB1:  90.91
+
+2018-08-22 09:51:51,919 - log/train.log - INFO -               LOC: precision:  92.41%; recall:  92.41%; FB1:  92.41  1951
+
+2018-08-22 09:51:51,919 - log/train.log - INFO -               ORG: precision:  89.32%; recall:  84.15%; FB1:  86.66  927
+
+2018-08-22 09:51:51,919 - log/train.log - INFO -               PER: precision:  91.81%; recall:  92.53%; FB1:  92.17  891
+
+2018-08-22 09:51:51,921 - log/train.log - INFO - evaluate:test
+2018-08-22 09:51:57,281 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7677 phrases; correct: 6956.
+
+2018-08-22 09:51:57,281 - log/train.log - INFO - accuracy:  98.55%; precision:  90.61%; recall:  90.26%; FB1:  90.43
+
+2018-08-22 09:51:57,281 - log/train.log - INFO -               LOC: precision:  91.32%; recall:  92.29%; FB1:  91.80  3697
+
+2018-08-22 09:51:57,281 - log/train.log - INFO -               ORG: precision:  87.72%; recall:  83.66%; FB1:  85.64  2084
+
+2018-08-22 09:51:57,281 - log/train.log - INFO -               PER: precision:  92.41%; recall:  93.99%; FB1:  93.19  1896
+
+2018-08-22 09:52:01,423 - log/train.log - INFO - iteration:27 step:56/1044, NER loss: 0.259594
+2018-08-22 09:52:09,181 - log/train.log - INFO - iteration:27 step:156/1044, NER loss: 0.210254
+2018-08-22 09:52:16,781 - log/train.log - INFO - iteration:27 step:256/1044, NER loss: 0.244992
+2018-08-22 09:52:25,149 - log/train.log - INFO - iteration:27 step:356/1044, NER loss: 0.249002
+2018-08-22 09:52:34,260 - log/train.log - INFO - iteration:27 step:456/1044, NER loss: 0.204534
+2018-08-22 09:52:42,094 - log/train.log - INFO - iteration:27 step:556/1044, NER loss: 0.247586
+2018-08-22 09:52:50,448 - log/train.log - INFO - iteration:27 step:656/1044, NER loss: 0.254164
+2018-08-22 09:52:59,528 - log/train.log - INFO - iteration:27 step:756/1044, NER loss: 0.245324
+2018-08-22 09:53:07,068 - log/train.log - INFO - iteration:27 step:856/1044, NER loss: 0.248599
+2018-08-22 09:53:15,472 - log/train.log - INFO - iteration:27 step:956/1044, NER loss: 0.263136
+2018-08-22 09:53:22,753 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:53:25,595 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3761 phrases; correct: 3441.
+
+2018-08-22 09:53:25,595 - log/train.log - INFO - accuracy:  98.70%; precision:  91.49%; recall:  90.10%; FB1:  90.79
+
+2018-08-22 09:53:25,595 - log/train.log - INFO -               LOC: precision:  92.30%; recall:  92.11%; FB1:  92.20  1947
+
+2018-08-22 09:53:25,595 - log/train.log - INFO -               ORG: precision:  88.17%; recall:  84.86%; FB1:  86.48  947
+
+2018-08-22 09:53:25,595 - log/train.log - INFO -               PER: precision:  93.31%; recall:  91.52%; FB1:  92.40  867
+
+2018-08-22 09:53:25,598 - log/train.log - INFO - evaluate:test
+2018-08-22 09:53:31,142 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7670 phrases; correct: 6978.
+
+2018-08-22 09:53:31,142 - log/train.log - INFO - accuracy:  98.60%; precision:  90.98%; recall:  90.54%; FB1:  90.76
+
+2018-08-22 09:53:31,142 - log/train.log - INFO -               LOC: precision:  91.82%; recall:  92.37%; FB1:  92.10  3680
+
+2018-08-22 09:53:31,143 - log/train.log - INFO -               ORG: precision:  87.45%; recall:  85.13%; FB1:  86.27  2127
+
+2018-08-22 09:53:31,143 - log/train.log - INFO -               PER: precision:  93.34%; recall:  93.29%; FB1:  93.32  1863
+
+2018-08-22 09:53:32,122 - log/train.log - INFO - iteration:28 step:12/1044, NER loss: 0.251809
+2018-08-22 09:53:41,329 - log/train.log - INFO - iteration:28 step:112/1044, NER loss: 0.224729
+2018-08-22 09:53:50,821 - log/train.log - INFO - iteration:28 step:212/1044, NER loss: 0.198334
+2018-08-22 09:53:59,679 - log/train.log - INFO - iteration:28 step:312/1044, NER loss: 0.230845
+2018-08-22 09:54:07,141 - log/train.log - INFO - iteration:28 step:412/1044, NER loss: 0.214195
+2018-08-22 09:54:14,650 - log/train.log - INFO - iteration:28 step:512/1044, NER loss: 0.227047
+2018-08-22 09:54:22,229 - log/train.log - INFO - iteration:28 step:612/1044, NER loss: 0.213813
+2018-08-22 09:54:30,455 - log/train.log - INFO - iteration:28 step:712/1044, NER loss: 0.236274
+2018-08-22 09:54:38,358 - log/train.log - INFO - iteration:28 step:812/1044, NER loss: 0.266661
+2018-08-22 09:54:46,630 - log/train.log - INFO - iteration:28 step:912/1044, NER loss: 0.240943
+2018-08-22 09:54:54,831 - log/train.log - INFO - iteration:28 step:1012/1044, NER loss: 0.269570
+2018-08-22 09:54:57,396 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:55:00,275 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3772 phrases; correct: 3429.
+
+2018-08-22 09:55:00,276 - log/train.log - INFO - accuracy:  98.66%; precision:  90.91%; recall:  89.79%; FB1:  90.34
+
+2018-08-22 09:55:00,276 - log/train.log - INFO -               LOC: precision:  92.20%; recall:  91.54%; FB1:  91.87  1937
+
+2018-08-22 09:55:00,276 - log/train.log - INFO -               ORG: precision:  85.71%; recall:  84.76%; FB1:  85.23  973
+
+2018-08-22 09:55:00,276 - log/train.log - INFO -               PER: precision:  93.85%; recall:  91.52%; FB1:  92.67  862
+
+2018-08-22 09:55:00,278 - log/train.log - INFO - evaluate:test
+2018-08-22 09:55:05,719 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7694 phrases; correct: 6970.
+
+2018-08-22 09:55:05,719 - log/train.log - INFO - accuracy:  98.55%; precision:  90.59%; recall:  90.44%; FB1:  90.51
+
+2018-08-22 09:55:05,719 - log/train.log - INFO -               LOC: precision:  91.58%; recall:  92.13%; FB1:  91.85  3680
+
+2018-08-22 09:55:05,719 - log/train.log - INFO -               ORG: precision:  85.74%; recall:  85.31%; FB1:  85.52  2174
+
+2018-08-22 09:55:05,719 - log/train.log - INFO -               PER: precision:  94.35%; recall:  93.13%; FB1:  93.74  1840
+
+2018-08-22 09:55:11,162 - log/train.log - INFO - iteration:29 step:68/1044, NER loss: 0.197837
+2018-08-22 09:55:19,630 - log/train.log - INFO - iteration:29 step:168/1044, NER loss: 0.206322
+2018-08-22 09:55:28,706 - log/train.log - INFO - iteration:29 step:268/1044, NER loss: 0.206664
+2018-08-22 09:55:37,114 - log/train.log - INFO - iteration:29 step:368/1044, NER loss: 0.202246
+2018-08-22 09:55:45,716 - log/train.log - INFO - iteration:29 step:468/1044, NER loss: 0.237937
+2018-08-22 09:55:53,909 - log/train.log - INFO - iteration:29 step:568/1044, NER loss: 0.259383
+2018-08-22 09:56:02,372 - log/train.log - INFO - iteration:29 step:668/1044, NER loss: 0.242084
+2018-08-22 09:56:09,819 - log/train.log - INFO - iteration:29 step:768/1044, NER loss: 0.239273
+2018-08-22 09:56:17,253 - log/train.log - INFO - iteration:29 step:868/1044, NER loss: 0.236471
+2018-08-22 09:56:25,319 - log/train.log - INFO - iteration:29 step:968/1044, NER loss: 0.219799
+2018-08-22 09:56:31,365 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:56:34,252 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3707 phrases; correct: 3419.
+
+2018-08-22 09:56:34,252 - log/train.log - INFO - accuracy:  98.71%; precision:  92.23%; recall:  89.53%; FB1:  90.86
+
+2018-08-22 09:56:34,252 - log/train.log - INFO -               LOC: precision:  92.24%; recall:  92.00%; FB1:  92.12  1946
+
+2018-08-22 09:56:34,252 - log/train.log - INFO -               ORG: precision:  90.86%; recall:  82.83%; FB1:  86.66  897
+
+2018-08-22 09:56:34,252 - log/train.log - INFO -               PER: precision:  93.63%; recall:  91.52%; FB1:  92.56  864
+
+2018-08-22 09:56:34,255 - log/train.log - INFO - evaluate:test
+2018-08-22 09:56:39,654 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7566 phrases; correct: 6916.
+
+2018-08-22 09:56:39,655 - log/train.log - INFO - accuracy:  98.59%; precision:  91.41%; recall:  89.74%; FB1:  90.57
+
+2018-08-22 09:56:39,655 - log/train.log - INFO -               LOC: precision:  90.86%; recall:  92.65%; FB1:  91.74  3730
+
+2018-08-22 09:56:39,655 - log/train.log - INFO -               ORG: precision:  89.49%; recall:  82.24%; FB1:  85.71  2008
+
+2018-08-22 09:56:39,655 - log/train.log - INFO -               PER: precision:  94.64%; recall:  92.81%; FB1:  93.72  1828
+
+2018-08-22 09:56:41,576 - log/train.log - INFO - iteration:30 step:24/1044, NER loss: 0.218193
+2018-08-22 09:56:48,984 - log/train.log - INFO - iteration:30 step:124/1044, NER loss: 0.177410
+2018-08-22 09:56:57,319 - log/train.log - INFO - iteration:30 step:224/1044, NER loss: 0.207020
+2018-08-22 09:57:05,289 - log/train.log - INFO - iteration:30 step:324/1044, NER loss: 0.222093
+2018-08-22 09:57:12,916 - log/train.log - INFO - iteration:30 step:424/1044, NER loss: 0.214350
+2018-08-22 09:57:20,688 - log/train.log - INFO - iteration:30 step:524/1044, NER loss: 0.194877
+2018-08-22 09:57:29,343 - log/train.log - INFO - iteration:30 step:624/1044, NER loss: 0.224194
+2018-08-22 09:57:38,275 - log/train.log - INFO - iteration:30 step:724/1044, NER loss: 0.211638
+2018-08-22 09:57:46,398 - log/train.log - INFO - iteration:30 step:824/1044, NER loss: 0.249142
+2018-08-22 09:57:55,125 - log/train.log - INFO - iteration:30 step:924/1044, NER loss: 0.208556
+2018-08-22 09:58:04,014 - log/train.log - INFO - iteration:30 step:1024/1044, NER loss: 0.276881
+2018-08-22 09:58:05,393 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:58:08,222 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3743 phrases; correct: 3442.
+
+2018-08-22 09:58:08,222 - log/train.log - INFO - accuracy:  98.71%; precision:  91.96%; recall:  90.13%; FB1:  91.03
+
+2018-08-22 09:58:08,223 - log/train.log - INFO -               LOC: precision:  93.19%; recall:  91.85%; FB1:  92.51  1923
+
+2018-08-22 09:58:08,223 - log/train.log - INFO -               ORG: precision:  87.13%; recall:  86.69%; FB1:  86.91  979
+
+2018-08-22 09:58:08,223 - log/train.log - INFO -               PER: precision:  94.77%; recall:  90.16%; FB1:  92.41  841
+
+2018-08-22 09:58:08,289 - log/train.log - INFO - new best dev f1 score:91.030
+2018-08-22 09:58:08,482 - log/train.log - INFO - model saved
+2018-08-22 09:58:08,482 - log/train.log - INFO - evaluate:test
+2018-08-22 09:58:13,853 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7586 phrases; correct: 6917.
+
+2018-08-22 09:58:13,853 - log/train.log - INFO - accuracy:  98.55%; precision:  91.18%; recall:  89.75%; FB1:  90.46
+
+2018-08-22 09:58:13,854 - log/train.log - INFO -               LOC: precision:  92.42%; recall:  91.01%; FB1:  91.71  3602
+
+2018-08-22 09:58:13,854 - log/train.log - INFO -               ORG: precision:  85.88%; recall:  85.72%; FB1:  85.80  2181
+
+2018-08-22 09:58:13,854 - log/train.log - INFO -               PER: precision:  95.12%; recall:  92.01%; FB1:  93.54  1803
+
+2018-08-22 09:58:21,162 - log/train.log - INFO - iteration:31 step:80/1044, NER loss: 0.197867
+2018-08-22 09:58:29,650 - log/train.log - INFO - iteration:31 step:180/1044, NER loss: 0.216943
+2018-08-22 09:58:38,839 - log/train.log - INFO - iteration:31 step:280/1044, NER loss: 0.253247
+2018-08-22 09:58:47,830 - log/train.log - INFO - iteration:31 step:380/1044, NER loss: 0.217680
+2018-08-22 09:58:55,286 - log/train.log - INFO - iteration:31 step:480/1044, NER loss: 0.201054
+2018-08-22 09:59:03,142 - log/train.log - INFO - iteration:31 step:580/1044, NER loss: 0.223787
+2018-08-22 09:59:11,608 - log/train.log - INFO - iteration:31 step:680/1044, NER loss: 0.195644
+2018-08-22 09:59:19,680 - log/train.log - INFO - iteration:31 step:780/1044, NER loss: 0.231769
+2018-08-22 09:59:27,175 - log/train.log - INFO - iteration:31 step:880/1044, NER loss: 0.210457
+2018-08-22 09:59:34,792 - log/train.log - INFO - iteration:31 step:980/1044, NER loss: 0.216057
+2018-08-22 09:59:39,622 - log/train.log - INFO - evaluate:dev
+2018-08-22 09:59:42,455 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3775 phrases; correct: 3445.
+
+2018-08-22 09:59:42,455 - log/train.log - INFO - accuracy:  98.66%; precision:  91.26%; recall:  90.21%; FB1:  90.73
+
+2018-08-22 09:59:42,455 - log/train.log - INFO -               LOC: precision:  93.19%; recall:  91.13%; FB1:  92.15  1908
+
+2018-08-22 09:59:42,455 - log/train.log - INFO -               ORG: precision:  86.32%; recall:  86.59%; FB1:  86.45  987
+
+2018-08-22 09:59:42,456 - log/train.log - INFO -               PER: precision:  92.61%; recall:  92.19%; FB1:  92.40  880
+
+2018-08-22 09:59:42,458 - log/train.log - INFO - evaluate:test
+2018-08-22 09:59:47,858 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7701 phrases; correct: 6965.
+
+2018-08-22 09:59:47,858 - log/train.log - INFO - accuracy:  98.57%; precision:  90.44%; recall:  90.37%; FB1:  90.41
+
+2018-08-22 09:59:47,858 - log/train.log - INFO -               LOC: precision:  92.11%; recall:  91.61%; FB1:  91.86  3638
+
+2018-08-22 09:59:47,858 - log/train.log - INFO -               ORG: precision:  85.29%; recall:  86.00%; FB1:  85.64  2203
+
+2018-08-22 09:59:47,858 - log/train.log - INFO -               PER: precision:  93.28%; recall:  93.08%; FB1:  93.18  1860
+
+2018-08-22 09:59:50,632 - log/train.log - INFO - iteration:32 step:36/1044, NER loss: 0.209468
+2018-08-22 09:59:59,464 - log/train.log - INFO - iteration:32 step:136/1044, NER loss: 0.213591
+2018-08-22 10:00:07,709 - log/train.log - INFO - iteration:32 step:236/1044, NER loss: 0.180959
+2018-08-22 10:00:15,913 - log/train.log - INFO - iteration:32 step:336/1044, NER loss: 0.233338
+2018-08-22 10:00:23,821 - log/train.log - INFO - iteration:32 step:436/1044, NER loss: 0.208634
+2018-08-22 10:00:31,709 - log/train.log - INFO - iteration:32 step:536/1044, NER loss: 0.187618
+2018-08-22 10:00:40,133 - log/train.log - INFO - iteration:32 step:636/1044, NER loss: 0.227914
+2018-08-22 10:00:48,150 - log/train.log - INFO - iteration:32 step:736/1044, NER loss: 0.206477
+2018-08-22 10:00:55,953 - log/train.log - INFO - iteration:32 step:836/1044, NER loss: 0.257070
+2018-08-22 10:01:04,738 - log/train.log - INFO - iteration:32 step:936/1044, NER loss: 0.244277
+2018-08-22 10:01:13,324 - log/train.log - INFO - iteration:32 step:1036/1044, NER loss: 0.216556
+2018-08-22 10:01:13,828 - log/train.log - INFO - evaluate:dev
+2018-08-22 10:01:16,665 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3777 phrases; correct: 3448.
+
+2018-08-22 10:01:16,665 - log/train.log - INFO - accuracy:  98.72%; precision:  91.29%; recall:  90.29%; FB1:  90.78
+
+2018-08-22 10:01:16,665 - log/train.log - INFO -               LOC: precision:  92.58%; recall:  92.11%; FB1:  92.34  1941
+
+2018-08-22 10:01:16,665 - log/train.log - INFO -               ORG: precision:  85.59%; recall:  86.89%; FB1:  86.23  999
+
+2018-08-22 10:01:16,665 - log/train.log - INFO -               PER: precision:  95.10%; recall:  90.05%; FB1:  92.50  837
+
+2018-08-22 10:01:16,668 - log/train.log - INFO - evaluate:test
+2018-08-22 10:01:22,091 - log/train.log - INFO - processed 219197 tokens with 7707 phrases; found: 7694 phrases; correct: 6942.
+
+2018-08-22 10:01:22,091 - log/train.log - INFO - accuracy:  98.50%; precision:  90.23%; recall:  90.07%; FB1:  90.15
+
+2018-08-22 10:01:22,091 - log/train.log - INFO -               LOC: precision:  91.33%; recall:  91.88%; FB1:  91.61  3680
+
+2018-08-22 10:01:22,091 - log/train.log - INFO -               ORG: precision:  84.31%; recall:  85.81%; FB1:  85.05  2224
+
+2018-08-22 10:01:22,091 - log/train.log - INFO -               PER: precision:  95.31%; recall:  91.52%; FB1:  93.38  1790
+
+2018-08-22 10:01:29,541 - log/train.log - INFO - iteration:33 step:92/1044, NER loss: 0.193658
+2018-08-22 10:01:39,020 - log/train.log - INFO - iteration:33 step:192/1044, NER loss: 0.216269
+2018-08-22 10:01:47,183 - log/train.log - INFO - iteration:33 step:292/1044, NER loss: 0.192595
+2018-08-22 10:01:55,526 - log/train.log - INFO - iteration:33 step:392/1044, NER loss: 0.196497
+2018-08-22 10:02:04,054 - log/train.log - INFO - iteration:33 step:492/1044, NER loss: 0.217262
+2018-08-22 10:02:12,017 - log/train.log - INFO - iteration:33 step:592/1044, NER loss: 0.222255
+2018-08-22 10:02:20,876 - log/train.log - INFO - iteration:33 step:692/1044, NER loss: 0.246313
+2018-08-22 10:02:28,598 - log/train.log - INFO - iteration:33 step:792/1044, NER loss: 0.197155
+2018-08-22 10:02:36,330 - log/train.log - INFO - iteration:33 step:892/1044, NER loss: 0.197095
+2018-08-22 10:02:44,309 - log/train.log - INFO - iteration:33 step:992/1044, NER loss: 0.225430
+2018-08-22 10:02:47,989 - log/train.log - INFO - evaluate:dev
+2018-08-22 10:02:50,958 - log/train.log - INFO - processed 109870 tokens with 3819 phrases; found: 3769 phrases; correct: 3434.
+
+2018-08-22 10:02:50,958 - log/train.log - INFO - accuracy:  98.66%; precision:  91.11%; recall:  89.92%; FB1:  90.51
+
+2018-08-22 10:02:50,958 - log/train.log - INFO -               LOC: precision:  91.05%; recall:  92.82%; FB1:  91.93  1989
+
+2018-08-22 10:02:50,958 - log/train.log - INFO -               ORG: precision:  88.84%; recall:  84.15%; FB1:  86.43  932
+
+2018-08-22 10:02:50,958 - log/train.log - INFO -               PER: precision:  93.75%; recall:  89.93%; FB1:  91.80  848
+
+2018-08-22 10:02:50,960 - log/train.log - INFO - evaluate:test
